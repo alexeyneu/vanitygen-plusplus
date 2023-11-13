@@ -21,7 +21,7 @@
 #include <math.h>
 #include <assert.h>
 #include <time.h>
-#include <pthread.h>
+#include "pthread.h"
 
 #include <openssl/sha.h>
 #include <openssl/ripemd.h>
