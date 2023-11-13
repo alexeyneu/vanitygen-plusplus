@@ -1,6 +1,12 @@
 # Vanitygen plus plus
 Vanity address generator for BTC, ETH, LTC, TRX etc (more than 100 crypto currencies).
-
+# build
+windows:
+msvc 2013+
+from msvc `x64 prompt`
+```
+nmake
+```
 # Usage
 List all supported crypto currencies:
 ```
