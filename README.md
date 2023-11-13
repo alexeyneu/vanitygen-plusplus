@@ -2,7 +2,7 @@
 Vanity address generator for BTC, ETH, LTC, TRX etc (more than 100 crypto currencies).
 # build
 windows:  
- - req : msvc 2013+ (others may work too) , video card with opencl 1.2+  , openssl `dll`'s installed(1.1+)
+ - req : msvc 2013+ (others may work too) , video card with opencl 1.2+  , openssl `dll`'s installed(1.1+)  
 from msvc `x64 prompt`
 ```
 nmake
