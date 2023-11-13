@@ -1,8 +1,8 @@
 # Vanitygen plus plus
 Vanity address generator for BTC, ETH, LTC, TRX etc (more than 100 crypto currencies).
 # build
-windows:
-req : msvc 2013+ (others may work too) , video card with opencl 1.2+  
+windows:  
+ - req : msvc 2013+ (others may work too) , video card with opencl 1.2+  
 from msvc `x64 prompt`
 ```
 nmake
