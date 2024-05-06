@@ -16,10 +16,10 @@ PTHREADS_LIBS = pthreadVC16x64MD.lib
 #### From: http://gnuwin32.sourceforge.net/packages/pcre.htm
 PCRE_LIBS = pcreVC16x64MD.lib
 
-CFLAGS_BASE = /D_WIN32 /DPTW32_STATIC_LIB /DHAVE_STRUCT_TIMESPEC /I$(PTHREADS_INCLUDE) /I$(OPENSSL_INCLUDE) /I$(OPENCL_INCLUDE) /Ox /Zi /D_AMD64_ /DNDEBUG
+CFLAGS_BASE = /D_WIN32 /DPTW32_STATIC_LIB /DHAVE_STRUCT_TIMESPEC /I$(PTHREADS_INCLUDE) /I$(OPENSSL_INCLUDE) /I$(OPENCL_INCLUDE) /Ox /Zi /D_AMD64_ /DNDEBUG /DCL_TARGET_OPENCL_VERSION=120
 CFLAGS = $(CFLAGS_BASE) /GL
 LIBS = $(OPENSSL_LIBS) $(PTHREADS_LIBS) $(PCRE_LIBS) ws2_32.lib user32.lib advapi32.lib gdi32.lib /LTCG
-OBJS = vanitygen.obj oclvanitygen.obj oclengine.obj oclvanityminer.obj keyconv.obj pattern.obj util.obj winglue.obj groestl.obj sha3.obj ed25519.obj
+OBJS = vanitygen.obj oclvanitygen.obj oclengine.obj oclvanityminer.obj keyconv.obj pattern.obj util.obj winglue.obj groestl.obj sha3.obj ed25519.obj  stellar.obj base32.obj crc16.obj vc*.pdb
 
 all: vanitygen++.exe oclvanitygen++.exe
 
