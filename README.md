@@ -68,33 +68,10 @@ ETH Privkey: 0xdb3813534c0c9595f9b8b35d6f544827065b33930ae42c38a9d7ce41a1d74669
 If you have OpenCL-compatible GPU, please use `oclvanitygen++`, it's faster.
 
 # Build
-## nix-build (install dependencies automatically)
-You need install nix-build firstly, for more information please visit: https://nixos.org/manual/nix/stable/installation/installing-binary.html
-
-After you install nix-build successfully, just run:
+x64  
 ```
-$ git clone https://github.com/10gic/vanitygen-plusplus.git
-$ cd vanitygen-plusplus
-$ nix-build                           # Build: vanitygen++ oclvanitygen++ keyconv oclvanityminer
-$ ./result/bin/vanitygen++ 1Love      # Executable files are stored at ./result/bin/
-Pattern: 1Love
-Address: 1Love3h1c5qd9ZRoDKkCLSeWfBKR5MTF7t
-Privkey: 5JYtyNYLTRX3dvpN5PCiYF1AKFnETmgBLukCNgfkoBjDHZ2yJp1
+nmake
 ```
-
-## make (install dependencies manually)
-Install building dependencies in Redhat/CentOS:
-```
-$ yum install openssl-devel
-$ yum install libcurl-devel
-```
-
-Build executable file:
-```
-$ make          # build: vanitygen++ keyconv
-$ make all      # build: vanitygen++ keyconv oclvanitygen++ oclvanityminer
-```
-
 # Solve Puzzle
 This tool can be used for solving the [Bitcoin puzzle](https://bitcointalk.org/index.php?topic=1306983.0).
 
