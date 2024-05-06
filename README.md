@@ -1,3 +1,7 @@
+ocl doesn't work really
+  
+  
+  
 # Vanitygen plus plus
 Vanity address generator for BTC, ETH, LTC, TRX etc (more than 100 crypto currencies).
 # build
