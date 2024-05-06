@@ -74,6 +74,7 @@ nmake
 ```
   
 `dll` files should be placed next to `exe`. included into `release`  
+opencl edition used hardcoded in `makefile`
 # Solve Puzzle
 This tool can be used for solving the [Bitcoin puzzle](https://bitcointalk.org/index.php?topic=1306983.0).
 
